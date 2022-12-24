@@ -1,0 +1,10 @@
+@import "normalize";
+@import "general";
+@import "container";
+@import "visually-hidden";
+@import "mixins";
+
+@import "../slick/slick/slick-theme.scss";
+@import "../slick/slick/slick.scss";
+
+@import "blocks/block";
