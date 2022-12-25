@@ -8,11 +8,11 @@
 }
 
 .dark {
-  --btn-bg-light: #1C1C1C;
+  --btn-bg-light: #272727;
   --text-light: #FFFFFF;
   --text-dark: #000000;
   --main-green: #299764;
-  --body-bg-light: #272727;
+  --body-bg-light: #1c1c1c;
   --btn-bg-dark: #F5F5F5;
 }
 
@@ -862,138 +862,117 @@ main {
     display: block;
   }
 }
+@media only screen and (max-width: 576px) {
+  .hero {
+    padding-top: 20px;
+  }
+  .hero__search__input {
+    padding: 12px 12px 12px 18px;
+  }
+  .hero__search__label::after {
+    padding: 20px;
+  }
+  .hero__search__input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .hero__search__input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .hero__search__input::placeholder {
+    font-size: 12px;
+  }
+}
 .service {
-  padding-top: 160px;
+  padding: 160px 0;
+  margin: 0 0 40px;
 }
 
-body {
-  background-color: white;
-}
-
-.service-sect__title {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
+.service__heading {
+  max-width: 684px;
+  width: 100%;
+  margin: 0 auto 40px;
   text-align: center;
-  color: #000000;
-  margin: 0 !important;
 }
 
-.service-sect__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #555555;
-  margin-bottom: 40px;
-}
-
-.service-sect__list {
-  flex-wrap: wrap;
+.service__list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 }
 
-.items__service {
-  background: #f5f5f5;
-  border-radius: 20px;
-  width: 590px;
+.service__item {
+  display: block;
+  margin: 0 auto;
   position: relative;
-  padding-left: 32px;
-  padding-bottom: 40px;
+  padding: 40px 32px;
+  max-width: 590px;
+  width: 100%;
+  background-color: var(--btn-bg-light);
+  border-radius: 20px;
   margin-bottom: 20px;
 }
-.items__service:nth-child(1):after {
-  content: "";
-  left: 450px;
-  top: 50px;
-  display: block;
+.service__item::after {
   position: absolute;
+  top: 32px;
+  right: 20px;
+  display: block;
   width: 60px;
   height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: url("../images/icon-service-1.svg");
-  background-repeat: no-repeat !important;
-}
-.items__service:nth-child(2):after {
   content: "";
-  left: 450px;
-  top: 50px;
-  display: block;
-  position: absolute;
-  width: 60px;
-  height: 60px;
+}
+.service__item:nth-child(2)::after {
   background-image: url("../images/icon-service-2.svg");
-  background-repeat: no-repeat !important;
 }
-.items__service:nth-child(3):after {
-  content: "";
-  left: 450px;
-  top: 50px;
-  display: block;
-  position: absolute;
-  width: 60px;
-  height: 60px;
+.service__item:nth-child(3)::after {
   background-image: url("../images/icon-service-3.svg");
-  background-repeat: no-repeat !important;
 }
-.items__service:nth-child(4):after {
-  content: "";
-  left: 450px;
-  top: 50px;
-  display: block;
-  position: absolute;
-  width: 60px;
-  height: 60px;
+.service__item:nth-child(4)::after {
   background-image: url("../images/icon-service-4.svg");
-  background-repeat: no-repeat !important;
 }
 
-.title__item__service {
+.service__content {
+  max-width: 354px;
+  width: 100%;
+}
+
+.service__subtitle {
+  margin: 0 0 10px;
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
-  color: #000000;
 }
 
-.w-50 {
-  width: 50%;
-}
-
-.text__item__service {
+.servicec__subtext {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #555555;
 }
 
-@media screen and (max-width: 1224px) {
-  .items__service {
-    width: 387px;
+@media only screen and (max-width: 500px) {
+  .service__item {
+    padding: 20px 20px;
   }
-  .title__item__service {
+  .service__item::after {
+    top: 24px;
+    width: 40px;
+    height: 40px;
+    background-size: 80%;
+  }
+  .service__content {
+    max-width: 312px;
+  }
+  .service__subtitle {
     font-size: 28px;
     line-height: 34px;
   }
-  .text__item__service {
+  .service {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #555555;
-  }
-  .items__service:nth-child(1):after {
-    left: 260px !important;
-    top: 40px;
-  }
-  .items__service:nth-child(2):after {
-    left: 260px !important;
-    top: 40px;
-  }
-  .items__service:nth-child(3):after {
-    left: 260px !important;
-    top: 40px;
-  }
-  .items__service:nth-child(4):after {
-    left: 260px !important;
-    top: 40px;
   }
 }/*# sourceMappingURL=main.css.map */
