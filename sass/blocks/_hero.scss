@@ -158,3 +158,18 @@
     }
 }
 
+@include max-width(576px) {
+    .hero {
+        padding-top: 20px;
+    }
+    .hero__search__input {
+        padding: 12px 12px 12px 18px;
+    }
+    .hero__search__label::after {
+        padding: 20px;
+    }
+
+    .hero__search__input::placeholder {
+        font-size: 12px;
+    }
+}
