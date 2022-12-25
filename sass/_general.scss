@@ -1,21 +1,40 @@
 html {
-    height: 100%;
-    scroll-behavior: smooth;
+  height: 100%;
+  scroll-behavior: smooth;
 }
-*,*::before,
+
+*,
+*::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white-bg-light);
-    font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
 }
+
+main {
+  flex-grow: 1;
+}
+
 img {
-    vertical-align: middle;
-    object-fit: cover;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
 }
