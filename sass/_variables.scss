@@ -8,6 +8,12 @@
     --main-green: #299764;
 
     --btn-bg-dark: #272727;
+
+
+    --choose-img1: url('../images/choose-icon1.svg');
+    --choose-img2: url('../images/choose-icon2.svg');
+    --choose-img3: url('../images/choose-icon3.svg');
+    --choose-img4: url('../images/choose-icon4.svg');
 }
 
 .dark {
@@ -20,4 +26,9 @@
 
     --body-bg-light: #1c1c1c;
     --btn-bg-dark: #F5F5F5;
+
+    --choose-img1: url('../images/choose-icon1-dark.svg');
+    --choose-img2: url('../images/choose-icon2-dark.svg');
+    --choose-img3: url('../images/choose-icon3-dark.svg');
+    --choose-img4: url('../images/choose-icon4-dark.svg');
 }

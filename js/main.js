@@ -10,6 +10,78 @@ modeBtn.addEventListener("click", () => {
 
 
 
+//   CHOOSE LIST CREATE
+
+let chooseList = document.querySelector('.choose__list');
+
+let chooseBtn1 = document.querySelector('.choose-btn__1');
+let chooseBtn2 = document.querySelector('.choose-btn__2');
+let chooseBtn3 = document.querySelector('.choose-btn__3');
+
+function renderCars(array) {
+    chooseList.innerHTML = '';
+    array.forEach(el => {
+        let chooseItem = document.createElement('li');
+        let chooseSubTitle = document.createElement('h3');
+        let chooseSubText = document.createElement('p');
+        let chooseItemImg = document.createElement('img');
+        let chooseBottomBox = document.createElement('div')
+
+        chooseSubTitle.textContent = el.name;
+        chooseSubText.textContent = el.type;
+        chooseItemImg.src = el.img;
+
+        chooseItem.setAttribute('class', 'choose__item');
+        chooseSubTitle.setAttribute('class', 'choose__subtitle');
+        chooseSubText.setAttribute('class', 'choose__subtext');
+        chooseItemImg.setAttribute('class', 'choose__itemimg');
+        chooseBottomBox.setAttribute('class', 'choose__item__box');
+        let chooseItemSpan1 = document.createElement('p');
+        let chooseItemSpan2 = document.createElement('p');
+        let chooseItemSpan3 = document.createElement('p');
+        let chooseItemSpan4 = document.createElement('p');
+
+        chooseItemSpan1.setAttribute('class', 'seats');
+        chooseItemSpan2.setAttribute('class', 'seats');
+        chooseItemSpan3.setAttribute('class', 'seats');
+        chooseItemSpan4.setAttribute('class', 'seats');
+
+        chooseItemSpan1.textContent = '5 Seats';
+        chooseItemSpan2.textContent = 'Automatic';
+        chooseItemSpan3.textContent = '21+ Years';
+        chooseItemSpan4.textContent = '1-lit / 2.5 km';
+
+        chooseBottomBox.appendChild(chooseItemSpan1)
+        chooseBottomBox.appendChild(chooseItemSpan2)
+        chooseBottomBox.appendChild(chooseItemSpan3)
+        chooseBottomBox.appendChild(chooseItemSpan4)
+
+
+        chooseItem.appendChild(chooseSubTitle)
+        chooseItem.appendChild(chooseSubText)
+        chooseItem.appendChild(chooseItemImg)
+        chooseItem.appendChild(chooseBottomBox)
+    
+        chooseList.appendChild(chooseItem);
+    })
+}
+
+chooseBtn1.addEventListener('click', () => {
+    renderCars(compact)
+})
+
+chooseBtn3.addEventListener('click', () => {
+    renderCars(vans);
+})
+
+chooseBtn2.addEventListener('click', () => {
+    renderCars(sportsCar);
+})
+renderCars(compact);
+
+
+
+
 // MODAL CODES
 
 const elModalBtn = document.querySelector(".linkbox__login");
