@@ -1,304 +1,296 @@
 .site-header {
-    position: fixed;
-    background-color: var(--body-bg-light);
-    top: 0;
-    z-index: 9;
-    display: block;
-    padding: 18px 0;
-    max-width: 100%;
-    width: 100%;
-    border-bottom: 1.5px solid #E5E7EA;
+  position: fixed;
+  background-color: var(--body-bg-light);
+  top: 0;
+  z-index: 9;
+  display: block;
+  padding: 18px 0;
+  max-width: 100%;
+  width: 100%;
+  border-bottom: 1.5px solid #e5e7ea;
 }
 
-
 .site-header__inner {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav__list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav__item {
-    margin-left: 32px;
-    position: relative;
+  margin-left: 32px;
+  position: relative;
 }
 
 .nav__item:hover ul {
-    display: flex;
+  display: flex;
 }
 
 .nav__item:nth-child(2),
 .nav__item:last-child {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
 
-    &::after {
-        display: block;
-        width: 9px;
-        height: 5px;
-        margin-left: 7px;
-        background-image: url('../images/arrow-down.svg');
-        @include transition;
-        content: '';
-    }
+  &::after {
+    display: block;
+    width: 9px;
+    height: 5px;
+    margin-left: 7px;
+    background-image: url("../images/arrow-down.svg");
+    @include transition;
+    content: "";
+  }
 }
 
 .nav__item:nth-child(2):hover::after,
 .nav__item:last-child:hover::after {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .nav__link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: var(--text-light);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--text-light);
 }
 
 .site-header__linkbox {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .linkbox__tel {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: var(--text-light);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--text-light);
 }
 
 .linkbox__mode__btn {
-    padding: 19px;
-    margin: 0 22px;
-    background-color: var(--btn-bg-light);
-    border: none;
-    outline: none;
-    border-radius: 50%;
+  padding: 19px;
+  margin: 0 22px;
+  background-color: var(--btn-bg-light);
+  border: none;
+  outline: none;
+  border-radius: 50%;
 }
 
 .linkbox__login {
-    display: flex;
-    align-items: center;
-    padding: 18px 30px;
-    color: #FFFFFF;
-    background-color: var(--main-green);
-    border: none;
-    outline: none;
-    border-radius: 100px;
-    @include transition;
+  display: flex;
+  align-items: center;
+  padding: 18px 30px;
+  color: #ffffff;
+  background-color: var(--main-green);
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  @include transition;
 
-    &:hover {
-        opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active {
-        background-color: var(--btn-bg-light);
-        color: var(--text-light);
-    }
+  &:active {
+    background-color: var(--btn-bg-light);
+    color: var(--text-light);
+  }
 
-
-    &::after {
-        display: block;
-        margin-left: 11px;
-        width: 14px;
-        height: 14px;
-        background-image: url('../images/login-icon.svg');
-        content: '';
-    }
+  &::after {
+    display: block;
+    margin-left: 11px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../images/login-icon.svg");
+    content: "";
+  }
 }
 
 .linkbox__login:active::after {
-    background-image: url('../images/login-icon-black.svg')
+  background-image: url("../images/login-icon-black.svg");
 }
 
 .nav__item__sublist {
-    position: absolute;
-    width: 120px;
-    padding: 8px;
-    display: none;
-    flex-direction: column;
-    top: 40px;
-    left: -10px;
-    position: absolute;
-    z-index: 10;
-    border-radius: 20px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  width: 120px;
+  padding: 8px;
+  display: none;
+  flex-direction: column;
+  top: 40px;
+  left: -10px;
+  position: absolute;
+  z-index: 10;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .nav__item__subitem {
-    padding: 10px 0 10px 16px;
-    margin: 2px 0;
-    border-radius: 100px;
+  padding: 10px 0 10px 16px;
+  margin: 2px 0;
+  border-radius: 100px;
 
-    &:hover {
-        background-color: var(--btn-bg-light);
-    }
+  &:hover {
+    background-color: var(--btn-bg-light);
+  }
 
-    &:active {
-        background-color: var(--main-green);
-        color: #FFFFFF;
-    }
-
+  &:active {
+    background-color: var(--main-green);
+    color: #ffffff;
+  }
 }
 
 .nav__item__sublink {
-    padding: 10px 0;
-    color: #000;
-    // background-color: var(--btn-bg-light);
+  padding: 10px 0;
+  color: #000;
 }
 
 .site-header__menu {
+  display: none;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+@include max-width(945px) {
+  .site-header {
+    padding: 18px;
+  }
+  .nav {
     display: none;
-    border: none;
-    background-color: transparent;
-    margin-left: auto;
+  }
+
+  .site-header__linkbox {
+    display: none;
+  }
+  .site-header__menu {
+    display: block;
+  }
 }
-
-@include max-width(768px) {
-    .site-header {
-        padding: 18px;
-    }
-    .nav {
-        display: none;
-    }
-    
-    .site-header__linkbox {
-        display: none;
-    }
-    .site-header__menu {
-        display: block;
-    }
-}
-
-
-
-
-
-
-
-
-
 
 .modal {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: -734%;
-    left: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -734%;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 
 .modal__inner {
-    position: absolute;
-    top: 140px;
-    right: 30%;
-    width: 100%;
-    max-width: 590px;
-    background: #ffffff;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+  position: absolute;
+  top: 140px;
+  right: 30%;
+  width: 100%;
+  max-width: 590px;
+  background: #ffffff;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .modal__main {
-    position: relative;
-    padding: 40px 32px;
+  position: relative;
+  padding: 40px 32px;
 }
 
 .modal__exit {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    padding: 18px;
-    border-radius: 50%;
-    border: none;
-    background-image: url("../images/modal-exit.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f5f5f5;
-    cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 18px;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../images/modal-exit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f5f5;
+  cursor: pointer;
 }
 
 .modal__title {
-    margin: 0 0 10px;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
-    text-align: center;
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
 }
 
 .modal__text {
-    margin-bottom: 32px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #555555;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #555555;
 }
 
 .modal__form {
-    position: relative;
+  position: relative;
 }
 
 .modal__password {
-    position: relative;
+  position: relative;
 }
 
 .modal__password::after {
-    position: absolute;
-    right: 0;
-    margin-top: 8px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #555555;
-    content: "Forgot password";
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  content: "Forgot password";
 }
 
-
 .modal__eye-password {
-    position: absolute;
-    top: 90px;
-    right: 20px;
-    width: 22px;
-    height: 22px;
-    background-image: url("../images/eye-password.svg");
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    content: "";
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../images/eye-password.svg");
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  content: "";
 }
 
 .main-inputs {
-    display: block;
-    width: 100%;
-    padding: 18px 30px;
-    border: 1.5px solid #e5e7ea;
-    border-radius: 82px;
+  display: block;
+  width: 100%;
+  padding: 18px 30px;
+  border: 1.5px solid #e5e7ea;
+  border-radius: 82px;
 }
 
 .modal__user-password {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .modal__confirmation {
-    margin-top: 51px;
-    margin-bottom: 32px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
+  margin-top: 51px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 }
 
 .linkbox__login--modal {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;
 }
+
+
+
+
+
+

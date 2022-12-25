@@ -1,225 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./slick/slick/slick.css">
-    <link rel="stylesheet" href="./slick/slick/slick-theme.css">
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
+    <link rel="stylesheet" href="./slick/slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<body>
+  <body>
     <header class="site-header">
-        <div class="container">
-            <div class="site-header__inner">
-                <a class="logo" href="./index.html">
-                    <img src="./images/logo.svg" alt="Site logo" />
-                </a>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="#"> Categories </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#"> About Us </a>
-                            <ul class="nav__item__sublist">
-                                <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink"> News </a>
-                                </li>
-                                <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink"> Careers </a>
-                                </li>
-                                <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink"> Locations </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#"> Help center </a>
+      <div class="container">
+        <div class="site-header__inner">
+          <a class="logo" href="./index.html">
+            <img src="./images/logo.svg" alt="Site logo" />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#"> Categories </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"> About Us </a>
+                <ul class="nav__item__sublist">
+                  <li class="nav__item__subitem">
+                    <a href="" class="nav__item__sublink"> News </a>
+                  </li>
+                  <li class="nav__item__subitem">
+                    <a href="" class="nav__item__sublink"> Careers </a>
+                  </li>
+                  <li class="nav__item__subitem">
+                    <a href="" class="nav__item__sublink"> Locations </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"> Help center </a>
 
-                            <ul class="nav__item__sublist nav__item__sublist--two">
-                                <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink"> FAQ </a>
-                                </li>
-                                <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink"> Contact us </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="site-header__linkbox linkbox">
-                    <a class="linkbox__tel" href="tel:+18554200000">+1 855 420 0000</a>
-                    <button class="linkbox__mode__btn">
-                        <img class="linkbox__mode__img" src="./images/dark-icon.svg" alt="mode button" />
+                <ul class="nav__item__sublist nav__item__sublist--two">
+                  <li class="nav__item__subitem">
+                    <a href="" class="nav__item__sublink"> FAQ </a>
+                  </li>
+                  <li class="nav__item__subitem">
+                    <a href="" class="nav__item__sublink"> Contact us </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="site-header__linkbox linkbox">
+            <a class="linkbox__tel" href="tel:+18554200000">+1 855 420 0000</a>
+            <button class="linkbox__mode__btn">
+              <img
+                class="linkbox__mode__img"
+                src="./images/dark-icon.svg"
+                alt="mode button"
+              />
+            </button>
+            <button class="linkbox__login" href="#">Login</button>
+            <div class="site-header__modal modal">
+              <div class="modal__inner">
+                <div class="modal__main">
+                  <button class="modal__exit"></button>
+                  <h2 class="modal__title">Login</h2>
+                  <p class="modal__text">
+                    Use the email and password that you login
+                  </p>
+                  <form
+                    class="modal__form"
+                    action="https://echo.htmlacademy.ru/"
+                    method="post"
+                  >
+                    <input
+                      class="main-inputs modal__email"
+                      name="user-email"
+                      type="email"
+                      placeholder="Email"
+                      aria-label="Email"
+                      required
+                    />
+                    <label class="modal__password">
+                      <input
+                        class="main-inputs modal__user-password"
+                        id="modal__user-password"
+                        name="user-password"
+                        type="password"
+                        placeholder="Password"
+                        aria-label="Password"
+                        required
+                      />
+                    </label>
+                    <button class="modal__eye-password" type="button"></button>
+                    <p class="modal__confirmation">
+                      I want to create an account
+                    </p>
+                    <button class="linkbox__login linkbox__login--modal">
+                      Login
                     </button>
-                    <button class="linkbox__login" href="#">Login</button>
-                    <div class="site-header__modal modal">
-                        <div class="modal__inner">
-                            <div class="modal__main">
-                                <button class="modal__exit"></button>
-                                <h2 class="modal__title">Login</h2>
-                                <p class="modal__text">
-                                    Use the email and password that you login
-                                </p>
-                                <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-                                    <input class="main-inputs modal__email" name="user-email" type="email"
-                                        placeholder="Email" aria-label="Email" required />
-                                    <label class="modal__password">
-                                        <input class="main-inputs modal__user-password" id="modal__user-password"
-                                            name="user-password" type="password" placeholder="Password"
-                                            aria-label="Password" required />
-                                    </label>
-                                    <button class="modal__eye-password" type="button"></button>
-                                    <p class="modal__confirmation">
-                                        I want to create an account
-                                    </p>
-                                    <button class="linkbox__login linkbox__login--modal">
-                                        Login
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                  </form>
                 </div>
-                <button class="site-header__menu">
-                    <img src="./images/menu.svg" alt="cilck to open menu">
-                </button>
+              </div>
             </div>
+          </div>
+          <button class="site-header__menu">
+            <img src="./images/menu.svg" alt="Click to open menu" />
+          </button>
+          <div class="site-header__menu menu">
+            <div class="menu__header">
+              <a href="./index.html">
+                <img src="./images/logo.svg" alt="Site logo" />
+              </a>
+              <button class="modal__exit"></button>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero__inner">
-                    <div class="hero__carousel">
-                        <ul class="hero__carousel__list">
-                            <li class="hero__carousel__item">
-                                <div class="hero__carousel__content">
-                                    <h1 class="hero__title">
-                                        Compact cars
-                                    </h1>
-                                    <p class="hero__text">
-                                        Rent cars as you are comfortable and where you are comfortable.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="hero__carousel__item hero-item-2">
-                                <div class="hero__carousel__content">
-                                    <h1 class="hero__title">
-                                        Sports cars
-                                    </h1>
-                                    <p class="hero__text">
-                                        Rent cars as you are comfortable and where you are comfortable.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="hero__carousel__item hero-item-3">
-                                <div class="hero__carousel__content">
-                                    <h1 class="hero__title">
-                                        Vans
-                                    </h1>
-                                    <p class="hero__text">
-                                        Rent cars as you are comfortable and where you are comfortable.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="hero__search">
-                        <form class="hero__form" method="post">
-                            <label class="hero__search__label" title="Find the car of your dreams">
-                                <input class="hero__search__input" type="text" placeholder="Find the car of your dreams"
-                                    aria-label="Find the car of your dreams">
-                            </label>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="choose">
-            <div class="container">
-                <div class="choose__inner">
-                    <div class="choose__heading">
-                        <h2 class="choose__title">
-                            Choose the car of your dreams
-                        </h2>
-                        <p class="choose__text">
-                            We provide our customers with the most incredible driving emotions. That is why there are
-                            only world-class cars in our fleet
-                        </p>
-                    </div>
-                    <div class="choose__btn__group choose-btn">
-                        <button class="choose-btn__1">Compact</button>
-                        <button class="choose-btn__2">Sports cars</button>
-                        <button class="choose-btn__3">Vans </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="service">
-            <div class="container">
-                <div class="service-sect__inner">
-                    <h2 class="service-sect__title">Unparalleled service</h2>
-                    <p class="service-sect__text">
-                        Whether you are looking for Newark Airport car rental, an
-                        insurance replacement <br />
-                        vehicle or minivan to take on vacation Car rental has it all.
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__carousel">
+              <ul class="hero__carousel__list">
+                <li class="hero__carousel__item">
+                  <div class="hero__carousel__content">
+                    <h1 class="hero__title">Compact cars</h1>
+                    <p class="hero__text">
+                      Rent cars as you are comfortable and where you are
+                      comfortable.
                     </p>
-                    <ul class="service-sect__list">
-                        <li class="items__service">
-                            <h3 class="title__item__service">
-                                Book online, <br />
-                                pay online
-                            </h3>
-                            <p class="text__item__service">
-                                Complete the booking process A-Z, with our <br> easy online system
-                            </p>
-                        </li>
-                        <li class="items__service">
-                            <h3 class="title__item__service">
-                                Guaranteed car <br />
-                                reservation
-                            </h3>
-                            <p class="text__item__service">
-                                When you book with Car rental, you can be
-                                <br> confident your car
-                                will be waiting for you
-                            </p>
-                        </li>
-                        <li class="items__service">
-                            <h3 class="title__item__service">
-                                Unparalleled <br />
-                                customer service
-                            </h3>
-                            <p class="text__item__service">
-                                We're here to help. We pride ourselves in <br> our customer service
-                            </p>
-                        </li>
-                        <li class="items__service">
-                            <h3 class="title__item__service">
-                                No reservation or <br />
-                                booking fees
-                            </h3>
-                            <p class="text__item__service">
-                                No cancellation fees if cancelled 24 hours <br> prior to booking time
-                            </p>
-                        </li>
-                    </ul>
-                </div>
+                  </div>
+                </li>
+                <li class="hero__carousel__item hero-item-2">
+                  <div class="hero__carousel__content">
+                    <h1 class="hero__title">Sports cars</h1>
+                    <p class="hero__text">
+                      Rent cars as you are comfortable and where you are
+                      comfortable.
+                    </p>
+                  </div>
+                </li>
+                <li class="hero__carousel__item hero-item-3">
+                  <div class="hero__carousel__content">
+                    <h1 class="hero__title">Vans</h1>
+                    <p class="hero__text">
+                      Rent cars as you are comfortable and where you are
+                      comfortable.
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </section>
+            <div class="hero__search">
+              <form class="hero__form" method="post">
+                <label
+                  class="hero__search__label"
+                  title="Find the car of your dreams"
+                >
+                  <input
+                    class="hero__search__input"
+                    type="text"
+                    placeholder="Find the car of your dreams"
+                    aria-label="Find the car of your dreams"
+                  />
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="choose">
+        <div class="container">
+          <div class="choose__inner">
+            <div class="choose__heading">
+              <h2 class="choose__title">Choose the car of your dreams</h2>
+              <p class="choose__text">
+                We provide our customers with the most incredible driving
+                emotions. That is why there are only world-class cars in our
+                fleet
+              </p>
+            </div>
+            <div class="choose__btn__group choose-btn">
+              <button class="choose-btn__1">Compact</button>
+              <button class="choose-btn__2">Sports cars</button>
+              <button class="choose-btn__3">Vans</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <div class="container">
+          <div class="service-sect__inner">
+            <h2 class="service-sect__title">Unparalleled service</h2>
+            <p class="service-sect__text">
+              Whether you are looking for Newark Airport car rental, an
+              insurance replacement <br />
+              vehicle or minivan to take on vacation Car rental has it all.
+            </p>
+            <ul class="service-sect__list">
+              <li class="items__service">
+                <h3 class="title__item__service">
+                  Book online, <br />
+                  pay online
+                </h3>
+                <p class="text__item__service">
+                  Complete the booking process A-Z, with our <br />
+                  easy online system
+                </p>
+              </li>
+              <li class="items__service">
+                <h3 class="title__item__service">
+                  Guaranteed car <br />
+                  reservation
+                </h3>
+                <p class="text__item__service">
+                  When you book with Car rental, you can be
+                  <br />
+                  confident your car will be waiting for you
+                </p>
+              </li>
+              <li class="items__service">
+                <h3 class="title__item__service">
+                  Unparalleled <br />
+                  customer service
+                </h3>
+                <p class="text__item__service">
+                  We're here to help. We pride ourselves in <br />
+                  our customer service
+                </p>
+              </li>
+              <li class="items__service">
+                <h3 class="title__item__service">
+                  No reservation or <br />
+                  booking fees
+                </h3>
+                <p class="text__item__service">
+                  No cancellation fees if cancelled 24 hours <br />
+                  prior to booking time
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./js/cars.js"></script>
     <script src="./slick/slick/slick.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/hero-carousel.js"></script>
-</body>
-
+  </body>
 </html>

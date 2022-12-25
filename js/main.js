@@ -7,6 +7,7 @@ modeBtn.addEventListener("click", () => { });
 
 // MODAL CODES
 
+const elHtml = document.querySelector("html")
 const elModalBtn = document.querySelector(".linkbox__login");
 const elExitBtn = document.querySelector(".modal__exit");
 const elEmailInput = document.querySelector(".modal__email");
@@ -35,10 +36,12 @@ elForm.addEventListener("input", () => {
 
 elModalBtn.addEventListener("click", () => {
     elModal.style.display = "block";
+    elHtml.style.overflow = 'hidden'
 });
 
 elExitBtn.addEventListener("click", () => {
     elModal.style.display = "none";
+    elHtml.style.overflow = 'auto'
 });
 
 elPassBtn.addEventListener("click", () => {
