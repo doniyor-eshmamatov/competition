@@ -16,52 +16,36 @@
         <div class="container">
             <div class="site-header__inner">
                 <a class="logo" href="./index.html">
-                    <img src="./images/logo.svg" alt="Site logo">
+                    <img src="./images/logo.svg" alt="Site logo" />
                 </a>
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Categories
-                            </a>
+                            <a class="nav__link" href="#"> Categories </a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                About Us
-                            </a>
+                            <a class="nav__link" href="#"> About Us </a>
                             <ul class="nav__item__sublist">
                                 <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink">
-                                        News
-                                    </a>
+                                    <a href="" class="nav__item__sublink"> News </a>
                                 </li>
                                 <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink">
-                                        Careers
-                                    </a>
+                                    <a href="" class="nav__item__sublink"> Careers </a>
                                 </li>
                                 <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink">
-                                        Locations
-                                    </a>
+                                    <a href="" class="nav__item__sublink"> Locations </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Help center
-                            </a>
+                            <a class="nav__link" href="#"> Help center </a>
 
-                            <ul class="nav__item__sublist">
+                            <ul class="nav__item__sublist nav__item__sublist--two">
                                 <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink">
-                                        FAQ
-                                    </a>
+                                    <a href="" class="nav__item__sublink"> FAQ </a>
                                 </li>
                                 <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink">
-                                        Contact us
-                                    </a>
+                                    <a href="" class="nav__item__sublink"> Contact us </a>
                                 </li>
                             </ul>
                         </li>
@@ -70,10 +54,40 @@
                 <div class="site-header__linkbox linkbox">
                     <a class="linkbox__tel" href="tel:+18554200000">+1 855 420 0000</a>
                     <button class="linkbox__mode__btn">
-                        <img class="linkbox__mode__img" src="./images/dark-icon.svg" alt="mode button">
+                        <img class="linkbox__mode__img" src="./images/dark-icon.svg" alt="mode button" />
                     </button>
-                    <button class="linkbox__login">Login</button>
+                    <button class="linkbox__login" href="#">Login</button>
+                    <div class="site-header__modal modal">
+                        <div class="modal__inner">
+                            <div class="modal__main">
+                                <button class="modal__exit"></button>
+                                <h2 class="modal__title">Login</h2>
+                                <p class="modal__text">
+                                    Use the email and password that you login
+                                </p>
+                                <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+                                    <input class="main-inputs modal__email" name="user-email" type="email"
+                                        placeholder="Email" aria-label="Email" required />
+                                    <label class="modal__password">
+                                        <input class="main-inputs modal__user-password" id="modal__user-password"
+                                            name="user-password" type="password" placeholder="Password"
+                                            aria-label="Password" required />
+                                    </label>
+                                    <button class="modal__eye-password" type="button"></button>
+                                    <p class="modal__confirmation">
+                                        I want to create an account
+                                    </p>
+                                    <button class="linkbox__login linkbox__login--modal">
+                                        Login
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <button class="site-header__menu">
+                    <img src="./images/menu.svg" alt="cilck to open menu">
+                </button>
             </div>
         </div>
     </header>
@@ -143,6 +157,58 @@
                         <button class="choose-btn__2">Sports cars</button>
                         <button class="choose-btn__3">Vans </button>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <div class="service-sect__inner">
+                    <h2 class="service-sect__title">Unparalleled service</h2>
+                    <p class="service-sect__text">
+                        Whether you are looking for Newark Airport car rental, an
+                        insurance replacement <br />
+                        vehicle or minivan to take on vacation Car rental has it all.
+                    </p>
+                    <ul class="service-sect__list">
+                        <li class="items__service">
+                            <h3 class="title__item__service">
+                                Book online, <br />
+                                pay online
+                            </h3>
+                            <p class="text__item__service">
+                                Complete the booking process A-Z, with our <br> easy online system
+                            </p>
+                        </li>
+                        <li class="items__service">
+                            <h3 class="title__item__service">
+                                Guaranteed car <br />
+                                reservation
+                            </h3>
+                            <p class="text__item__service">
+                                When you book with Car rental, you can be
+                                <br> confident your car
+                                will be waiting for you
+                            </p>
+                        </li>
+                        <li class="items__service">
+                            <h3 class="title__item__service">
+                                Unparalleled <br />
+                                customer service
+                            </h3>
+                            <p class="text__item__service">
+                                We're here to help. We pride ourselves in <br> our customer service
+                            </p>
+                        </li>
+                        <li class="items__service">
+                            <h3 class="title__item__service">
+                                No reservation or <br />
+                                booking fees
+                            </h3>
+                            <p class="text__item__service">
+                                No cancellation fees if cancelled 24 hours <br> prior to booking time
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>

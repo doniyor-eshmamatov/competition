@@ -1,10 +1,13 @@
 .site-header {
-    position: absolute;top: 0;
+    position: fixed;
+    background-color: var(--body-bg-light);
+    top: 0;
     z-index: 9;
     display: block;
     padding: 18px 0;
     max-width: 100%;
-    width: 100%;border-bottom: 1.5px solid #E5E7EA;
+    width: 100%;
+    border-bottom: 1.5px solid #E5E7EA;
 }
 
 
@@ -136,15 +139,166 @@
     &:hover {
         background-color: var(--btn-bg-light);
     }
+
     &:active {
         background-color: var(--main-green);
         color: #FFFFFF;
     }
 
 }
+
 .nav__item__sublink {
     padding: 10px 0;
     color: #000;
     // background-color: var(--btn-bg-light);
 }
 
+.site-header__menu {
+    display: none;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+}
+
+@include max-width(768px) {
+    .site-header {
+        padding: 18px;
+    }
+    .nav {
+        display: none;
+    }
+    
+    .site-header__linkbox {
+        display: none;
+    }
+    .site-header__menu {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -734%;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.modal__inner {
+    position: absolute;
+    top: 140px;
+    right: 30%;
+    width: 100%;
+    max-width: 590px;
+    background: #ffffff;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.modal__main {
+    position: relative;
+    padding: 40px 32px;
+}
+
+.modal__exit {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 18px;
+    border-radius: 50%;
+    border: none;
+    background-image: url("../images/modal-exit.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.modal__title {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.modal__text {
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #555555;
+}
+
+.modal__form {
+    position: relative;
+}
+
+.modal__password {
+    position: relative;
+}
+
+.modal__password::after {
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    content: "Forgot password";
+}
+
+
+.modal__eye-password {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/eye-password.svg");
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    content: "";
+}
+
+.main-inputs {
+    display: block;
+    width: 100%;
+    padding: 18px 30px;
+    border: 1.5px solid #e5e7ea;
+    border-radius: 82px;
+}
+
+.modal__user-password {
+    margin-top: 16px;
+}
+
+.modal__confirmation {
+    margin-top: 51px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.linkbox__login--modal {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+}
