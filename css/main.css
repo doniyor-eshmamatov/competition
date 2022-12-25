@@ -354,6 +354,8 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  background-color: var(--body-bg-light);
 }
 
 main {
@@ -362,7 +364,6 @@ main {
 
 img {
   display: block;
-  vertical-align: middle;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -398,4 +399,31 @@ p {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.site-header {
+  position: absolute;
+  z-index: 10;
+  display: block;
+  padding: 27px 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item + .nav__item {
+  margin-left: 32px;
+}
+
+.site-header__linkbox {
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -14,6 +14,8 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
+  font-family: 'Montserrat','Arial', sans-serif;
+  background-color: var(--body-bg-light);
 }
 
 main {
@@ -22,7 +24,6 @@ main {
 
 img {
   display: block;
-  vertical-align: middle;
   object-fit: cover;
 }
 

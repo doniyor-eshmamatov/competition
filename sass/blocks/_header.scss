@@ -1,0 +1,28 @@
+.site-header {
+    position: absolute;
+    z-index: 10;
+    display: block;
+    padding: 27px 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.site-header__inner {
+    display: flex;
+    align-items: center;
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item + .nav__item {
+    margin-left: 32px;
+}
+.nav__link {
+    
+}
+
+.site-header__linkbox {
+    margin-left: auto;
+}
