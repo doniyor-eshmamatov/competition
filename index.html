@@ -12,74 +12,72 @@
 </head>
 
 <body>
-    <main>
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header__inner">
-                    <a class="logo" href="./index.html">
-                        <img src="./images/logo.svg" alt="Site logo">
-                    </a>
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a class="nav__link" href="#">
-                                    Categories
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#">
-                                    About Us
-                                </a>
-                                <ul class="nav__item__sublist">
-                                    <li class="nav__item__subitem">
-                                        <a href="" class="nav__item__sublink">
-                                            News
-                                        </a>
-                                    </li>
-                                    <li class="nav__item__subitem">
-                                        <a href="" class="nav__item__sublink">
-                                            Careers
-                                        </a>
-                                    </li>
-                                    <li class="nav__item__subitem">
-                                        <a href="" class="nav__item__sublink">
-                                            Locations
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#">
-                                    Help center
-                                </a>
-    
-                                <ul class="nav__item__sublist">
-                                    <li class="nav__item__subitem">
-                                        <a href="" class="nav__item__sublink">
-                                            FAQ
-                                        </a>
-                                    </li>
-                                    <li class="nav__item__subitem">
-                                        <a href="" class="nav__item__sublink">
-                                            Contact us
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="site-header__linkbox linkbox">
-                        <a class="linkbox__tel" href="tel:+18554200000">+1 855 420 0000</a>
-                        <button class="linkbox__mode__btn">
-                            <img class="linkbox__mode__img" src="./images/dark-icon.svg" alt="mode button">
-                        </button>
-                        <button class="linkbox__login" href="#">Login</button>
-                    </div>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__inner">
+                <a class="logo" href="./index.html">
+                    <img src="./images/logo.svg" alt="Site logo">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                Categories
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                About Us
+                            </a>
+                            <ul class="nav__item__sublist">
+                                <li class="nav__item__subitem">
+                                    <a href="" class="nav__item__sublink">
+                                        News
+                                    </a>
+                                </li>
+                                <li class="nav__item__subitem">
+                                    <a href="" class="nav__item__sublink">
+                                        Careers
+                                    </a>
+                                </li>
+                                <li class="nav__item__subitem">
+                                    <a href="" class="nav__item__sublink">
+                                        Locations
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                Help center
+                            </a>
+
+                            <ul class="nav__item__sublist">
+                                <li class="nav__item__subitem">
+                                    <a href="" class="nav__item__sublink">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="nav__item__subitem">
+                                    <a href="" class="nav__item__sublink">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="site-header__linkbox linkbox">
+                    <a class="linkbox__tel" href="tel:+18554200000">+1 855 420 0000</a>
+                    <button class="linkbox__mode__btn">
+                        <img class="linkbox__mode__img" src="./images/dark-icon.svg" alt="mode button">
+                    </button>
+                    <button class="linkbox__login">Login</button>
                 </div>
             </div>
-        </header>
-    
-    
+        </div>
+    </header>
+    <main>
         <section class="hero">
             <div class="container">
                 <div class="hero__inner">
@@ -118,8 +116,8 @@
                         </ul>
                     </div>
                     <div class="hero__search">
-                        <form action="" class="hero__form">
-                            <label clas title="Find the car of your dreams">
+                        <form class="hero__form" method="post">
+                            <label class="hero__search__label" title="Find the car of your dreams">
                                 <input class="hero__search__input" type="text" placeholder="Find the car of your dreams"
                                     aria-label="Find the car of your dreams">
                             </label>
@@ -131,7 +129,20 @@
         <section class="choose">
             <div class="container">
                 <div class="choose__inner">
-                    <p class="choose__heading"></p>
+                    <div class="choose__heading">
+                        <h2 class="choose__title">
+                            Choose the car of your dreams
+                        </h2>
+                        <p class="choose__text">
+                            We provide our customers with the most incredible driving emotions. That is why there are
+                            only world-class cars in our fleet
+                        </p>
+                    </div>
+                    <div class="choose__btn__group choose-btn">
+                        <button class="choose-btn__1">Compact</button>
+                        <button class="choose-btn__2">Sports cars</button>
+                        <button class="choose-btn__3">Vans </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -139,6 +150,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/cars.js"></script>
     <script src="./slick/slick/slick.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/hero-carousel.js"></script>

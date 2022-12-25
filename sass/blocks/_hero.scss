@@ -5,6 +5,8 @@
 
 .hero__carousel__item {
     background-image: url('../images/hero-carousel-img1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     max-width: 1200px;
     width: 100%;
     min-height: 500px;
@@ -46,7 +48,7 @@
 
 .hero__form {
     position: absolute;
-    bottom: -30px;
+    bottom: -35px;
     left: calc(50% - 300px);
     max-width: 600px;
     width: 100%;
@@ -86,7 +88,7 @@
     width: 36px !important;
     height: 36px !important;
     left: calc(100% - 120px) !important;
-    bottom: 20px !important;
+    bottom: 40px !important;
     background-color: #fff;
     background-image: url('../images/arrow-down.svg');
     background-repeat: no-repeat;
@@ -106,7 +108,7 @@
     width: 36px !important;
     height: 36px !important;
     left: calc(100% - 70px) !important;
-    bottom: 20px !important;
+    bottom: 40px !important;
     background-color: #fff;
     background-image: url('../images/arrow-down.svg');
     background-repeat: no-repeat;
@@ -121,4 +123,37 @@
     }
 }
 
+
+
+
+@include max-width(768px) {
+    .hero__carousel__item {
+        background-position: center top;
+        background-size: cover;
+        min-height: 300px;
+    }
+    .hero__form {
+        padding: 0 30px;
+        // max-width: 600px;
+        bottom: -30px;
+        left: 0;
+        max-width: 768px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hero__search__label::after {
+        right: 33px;
+        top: 3px;
+    }
+
+    .hero__search__label {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .hero__search__input {
+        display: block;
+    }
+}
 
