@@ -1,0 +1,124 @@
+.hero {
+    position: relative;
+}
+
+
+.hero__carousel__item {
+    background-image: url('../images/hero-carousel-img1.png');
+    max-width: 1200px;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+    border-radius: 20px !important;
+}
+
+.hero-item-2 {
+    background-image: url('../images/hero-carousel-img2.png');
+}
+
+.hero-item-3 {
+    background-image: url('../images/hero-carousel-img3.png');
+}
+
+
+.hero__carousel__content {
+    margin: 60px auto 0;
+    max-width: 416px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.hero__title {
+    margin: 0 0 16px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.hero__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.hero__form {
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 300px);
+    max-width: 600px;
+    width: 100%;
+}
+
+.hero__search__input {
+    position: relative;
+    width: 100%;
+    padding: 22px 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #555555;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    border: none;
+    outline: none;
+}
+
+.hero__search__label::after {
+    position: absolute;
+    display: inline-block;
+    padding: 30px;
+    top: 2px;
+    right: 2px;
+    background-color: var(--main-green);
+    background-image: url('../images/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    content: "";
+}
+
+.slick-prev {
+    display: inline-block;
+    width: 36px !important;
+    height: 36px !important;
+    left: calc(100% - 120px) !important;
+    bottom: 20px !important;
+    background-color: #fff;
+    background-image: url('../images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    transform: rotate(90deg);
+    border-radius: 50%;
+    z-index: 2;
+
+    &::before {
+        display: none;
+    }
+}
+
+.slick-next {
+    display: inline-block;
+    width: 36px !important;
+    height: 36px !important;
+    left: calc(100% - 70px) !important;
+    bottom: 20px !important;
+    background-color: #fff;
+    background-image: url('../images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    transform: rotate(-90deg);
+    border-radius: 50%;
+    z-index: 2;
+
+    &::before {
+        display: none;
+    }
+}
+
+
