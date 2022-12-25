@@ -361,6 +361,7 @@ main {
 }
 
 img {
+  display: block;
   vertical-align: middle;
   -o-object-fit: cover;
      object-fit: cover;
