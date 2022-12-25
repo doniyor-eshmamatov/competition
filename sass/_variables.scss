@@ -1,23 +1,42 @@
 :root {
-    --body-bg-light: #F5F5F5;
-    --btn-bg-light: #EEEEEE;
+  --body-bg-light: #f5f5f5;
+  --btn-bg-light: #eeeeee;
 
-    --text-light: #000000;
-    --text-dark: #FFFFFF;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --arrow-down-bgi: url("../images/arrow-down.svg");
 
-    --main-green: #299764;
+  --main-green: #299764;
 
-    --btn-bg-dark: #272727;
+  --menu-bgi: #fff;
+  --btn-bg-dark: #272727;
+  --mode-btn-bgi: url("../images/dark-icon.svg");
+
+  // MENU
+  --menu-links-color: #555555;
+
+  --menu-animation: translateX(110%);
+  --menu-bg-width: 0%;
 }
 
 .dark {
     --btn-bg-light: #272727;
 
-    --text-light: #FFFFFF;
-    --text-dark: #000000;
+  --text-light: #ffffff;
+  --text-dark: #000000;
+  --arrow-down-bgi: url("../images/arrow-down-light.svg");
 
-    --main-green: #299764;
+  --main-green: #299764;
 
-    --body-bg-light: #1c1c1c;
-    --btn-bg-dark: #F5F5F5;
+  --body-bg-light: #272727;
+  --menu-bgi: #323232;
+  --btn-bg-dark: #f5f5f5;
+  --mode-btn-bgi: url("../images/sun.svg");
+
+  --menu-links-color: #adaaaa;
+}
+
+.menu {
+  --menu-animation: translateX(0%);
+  --menu-bg-width: 100%;
 }
