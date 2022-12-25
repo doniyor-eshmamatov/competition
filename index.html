@@ -51,62 +51,106 @@
             </ul>
           </nav>
           <div class="site-header__linkbox linkbox">
-            <a class="linkbox__tel" href="tel:+18554200000">+1 855 420 0000</a>
-            <button class="linkbox__mode__btn">
+            <a class="linkbox__tel" href="tel:18554200000">+1 855 420 0000</a>
+            <button class="linkbox__mode__btn" onclick="theme()">
               <img
                 class="linkbox__mode__img"
                 src="./images/dark-icon.svg"
                 alt="mode button"
               />
             </button>
-            <button class="linkbox__login" href="#">Login</button>
-            <div class="site-header__modal modal">
-              <div class="modal__inner">
-                <div class="modal__main">
-                  <button class="modal__exit"></button>
-                  <h2 class="modal__title">Login</h2>
-                  <p class="modal__text">
-                    Use the email and password that you login
-                  </p>
-                  <form
-                    class="modal__form"
-                    action="https://echo.htmlacademy.ru/"
-                    method="post"
-                  >
+            <button class="linkbox__login" onclick="modal()">Login</button>
+          </div>
+          <div class="site-header__modal modal">
+            <div class="modal__inner">
+              <div class="modal__main">
+                <button class="modal__exit" onclick="modalExit()"></button>
+                <h2 class="modal__title">Login</h2>
+                <p class="modal__text">
+                  Use the email and password that you login
+                </p>
+                <form
+                  class="modal__form"
+                  action="https://echo.htmlacademy.ru/"
+                  method="post"
+                >
+                  <input
+                    class="main-inputs modal__email"
+                    name="user-email"
+                    type="email"
+                    placeholder="Email"
+                    aria-label="Email"
+                    required
+                  />
+                  <label class="modal__password">
                     <input
-                      class="main-inputs modal__email"
-                      name="user-email"
-                      type="email"
-                      placeholder="Email"
-                      aria-label="Email"
+                      class="main-inputs modal__user-password"
+                      id="modal__user-password"
+                      name="user-password"
+                      type="password"
+                      placeholder="Password"
+                      aria-label="Password"
                       required
                     />
-                    <label class="modal__password">
-                      <input
-                        class="main-inputs modal__user-password"
-                        id="modal__user-password"
-                        name="user-password"
-                        type="password"
-                        placeholder="Password"
-                        aria-label="Password"
-                        required
-                      />
-                    </label>
-                    <button class="modal__eye-password" type="button"></button>
-                    <p class="modal__confirmation">
-                      I want to create an account
-                    </p>
-                    <button class="linkbox__login linkbox__login--modal">
-                      Login
-                    </button>
-                  </form>
-                </div>
+                  </label>
+                  <button class="modal__eye-password" type="button"></button>
+                  <p class="modal__confirmation">I want to create an account</p>
+                  <button class="linkbox__login linkbox__login--modal">
+                    Login
+                  </button>
+                </form>
               </div>
             </div>
           </div>
-          <button class="site-header__menu">
-            <img src="./images/menu.svg" alt="Click to open menu" />
-          </button>
+          <button class="site-header__menu"></button>
+          <div class="site-header__manu site-menu"></div>
+          <div class="site-menu__inner">
+            <div class="menu__header">
+              <a class="logo" href="./index.html">
+                <img src="./images/logo.svg" alt="Site logo" />
+              </a>
+              <button
+                class="modal__exit modal__exit--menu"
+                onclick="menuExit()"
+              ></button>
+            </div>
+            <h2 class="site-menu__title">Categories</h2>
+            <p class="site-menu__links__title">About Us</p>
+            <ul class="site-menu__list">
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="#"> News </a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="#"> Careers </a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="#"> Locations </a>
+              </li>
+            </ul>
+            <p class="site-menu__links__title">Help center</p>
+            <ul class="site-menu__list">
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="#"> FAQ </a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="#"> Contact us </a>
+              </li>
+            </ul>
+            <div class="site-menu__foot">
+              <a class="linkbox__tel linkbox__tel--menu" href="tel:+18554200000"
+                >+1 855 420 0000</a
+              >
+              <div class="site__menu__main-btns">
+                <button class="linkbox__mode__btn" onclick="theme()"></button>
+                <button
+                  class="linkbox__login linkbox__login--menu"
+                  onclick="modal()"
+                >
+                  Login
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
