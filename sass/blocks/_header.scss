@@ -7,7 +7,10 @@
     padding: 18px 0;
     max-width: 100%;
     width: 100%;
-    border-bottom: 1.5px solid #E5E7EA;
+    border-bottom: 1.5px solid var(--btn-bg-light);
+}
+main {
+    background-color: var(--body-bg-light);
 }
 
 
