@@ -534,28 +534,13 @@ p {
   padding-top: 79px;
 }
 
-@media screen and (max-width: 835px) {
-  .safe__item {
-    width: 140px !important;
-    height: 165px !important;
-  }
-  .safe__title {
-    width: 106% !important;
-  }
-  .img__safe {
-    width: 284px !important;
-    height: 332px !important;
-    margin-left: 54px !important;
-    margin-right: 70px !important;
-    z-index: 100000 !important;
-  }
+@media screen and (max-width: 1363px) {
   .ellipse-safe {
-    width: 220px !important;
-    height: 220px !important;
-    left: 585px !important;
-    top: 186px !important;
+    left: 850px !important;
   }
-  .safe__text {
-    margin-bottom: 0 !important;
+}
+@media screen and (max-width: 1246px) {
+  .ellipse-safe {
+    left: 799px !important;
   }
 }/*# sourceMappingURL=main.css.map */
