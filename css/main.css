@@ -365,7 +365,6 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
-  background-color: var(--body-bg-light);
 }
 
 main {
@@ -431,8 +430,13 @@ p {
 }
 
 .nav__item {
-  margin-left: 32px;
+  margin-left: 16px;
+  padding: 16px;
   position: relative;
+}
+.nav__item:hover {
+  border-radius: 100px;
+  background-color: #f5f5f5;
 }
 
 .nav__item:hover ul {
@@ -441,7 +445,7 @@ p {
 
 .nav__item:nth-child(2),
 .nav__item:last-child {
-  padding: 10px 0;
+  margin: 0;
   display: flex;
   align-items: center;
 }
@@ -494,7 +498,7 @@ p {
   display: flex;
   align-items: center;
   padding: 18px 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: var(--main-green);
   border: none;
   outline: none;
@@ -507,6 +511,7 @@ p {
 .linkbox__login:active {
   background-color: var(--btn-bg-light);
   color: var(--text-light);
+  opacity: 1;
 }
 .linkbox__login::after {
   display: block;
@@ -523,17 +528,22 @@ p {
 
 .nav__item__sublist {
   position: absolute;
+  top: 53px;
+  left: 0;
+  z-index: 10;
   width: 120px;
   padding: 8px;
   display: none;
   flex-direction: column;
-  top: 40px;
-  left: -10px;
-  position: absolute;
-  z-index: 10;
   border-radius: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav__item__sublist--two {
+  position: absolute;
+  top: 53px;
+  left: 11px;
 }
 
 .nav__item__subitem {
@@ -546,10 +556,127 @@ p {
 }
 .nav__item__subitem:active {
   background-color: var(--main-green);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .nav__item__sublink {
   padding: 10px 0;
   color: #000;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -734%;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.modal__inner {
+  position: absolute;
+  top: 140px;
+  right: 30%;
+  width: 100%;
+  max-width: 590px;
+  background: #ffffff;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.modal__main {
+  position: relative;
+  padding: 40px 32px;
+}
+
+.modal__exit {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 18px;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../images/modal-exit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.modal__text {
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #555555;
+}
+
+.modal__form {
+  position: relative;
+}
+
+.modal__password {
+  position: relative;
+}
+
+.modal__password::after {
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  content: "Forgot password";
+}
+
+.modal__eye-password {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../images/eye-password.svg");
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  content: "";
+}
+
+.main-inputs {
+  display: block;
+  width: 100%;
+  padding: 18px 30px;
+  border: 1.5px solid #e5e7ea;
+  border-radius: 82px;
+}
+
+.modal__user-password {
+  margin-top: 16px;
+}
+
+.modal__confirmation {
+  margin-top: 51px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.linkbox__login--modal {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

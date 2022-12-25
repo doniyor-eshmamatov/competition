@@ -1,87 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./slick/slick/slick.css">
-    <link rel="stylesheet" href="./slick/slick/slick-theme.css">
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./slick/slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="container">
-            <div class="site-header__inner">
-                <a class="logo" href="./index.html">
-                    <img src="./images/logo.svg" alt="Site logo">
-                </a>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Categories
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                About Us
-                            </a>
-                            <ul class="nav__item__sublist">
-                                <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink">
-                                        News
-                                    </a>
-                                </li>
-                                <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink">
-                                        Careers
-                                    </a>
-                                </li>
-                                <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink">
-                                        Locations
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">
-                                Help center
-                            </a>
+      <div class="container">
+        <div class="site-header__inner">
+          <a class="logo" href="./index.html">
+            <img src="./images/logo.svg" alt="Site logo" />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#"> Categories </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"> About Us </a>
+                <ul class="nav__item__sublist">
+                  <li class="nav__item__subitem">
+                    <a href="" class="nav__item__sublink"> News </a>
+                  </li>
+                  <li class="nav__item__subitem">
+                    <a href="" class="nav__item__sublink"> Careers </a>
+                  </li>
+                  <li class="nav__item__subitem">
+                    <a href="" class="nav__item__sublink"> Locations </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"> Help center </a>
 
-                            <ul class="nav__item__sublist">
-                                <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink">
-                                        FAQ
-                                    </a>
-                                </li>
-                                <li class="nav__item__subitem">
-                                    <a href="" class="nav__item__sublink">
-                                        Contact us
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="site-header__linkbox linkbox">
-                    <a class="linkbox__tel" href="tel:+18554200000">+1 855 420 0000</a>
-                    <button  class="linkbox__mode__btn">
-                        <img class="linkbox__mode__img" src="./images/dark-icon.svg" alt="mode button">
+                <ul class="nav__item__sublist nav__item__sublist--two">
+                  <li class="nav__item__subitem">
+                    <a href="" class="nav__item__sublink"> FAQ </a>
+                  </li>
+                  <li class="nav__item__subitem">
+                    <a href="" class="nav__item__sublink"> Contact us </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="site-header__linkbox linkbox">
+            <a class="linkbox__tel" href="tel:+18554200000">+1 855 420 0000</a>
+            <button class="linkbox__mode__btn">
+              <img
+                class="linkbox__mode__img"
+                src="./images/dark-icon.svg"
+                alt="mode button"
+              />
+            </button>
+            <button class="linkbox__login" href="#">Login</button>
+            <div class="site-header__modal modal">
+              <div class="modal__inner">
+                <div class="modal__main">
+                  <button class="modal__exit"></button>
+                  <h2 class="modal__title">Login</h2>
+                  <p class="modal__text">
+                    Use the email and password that you login
+                  </p>
+                  <form
+                    class="modal__form"
+                    action="https://echo.htmlacademy.ru/"
+                    method="post"
+                  >
+                    <input
+                      class="main-inputs modal__email"
+                      name="user-email"
+                      type="email"
+                      placeholder="Email"
+                      aria-label="Email"
+                      required
+                    />
+                    <label class="modal__password">
+                      <input
+                        class="main-inputs modal__user-password"
+                        id="modal__user-password"
+                        name="user-password"
+                        type="password"
+                        placeholder="Password"
+                        aria-label="Password"
+                        required
+                      />
+                    </label>
+                    <button class="modal__eye-password" type="button"></button>
+                    <p class="modal__confirmation">
+                      I want to create an account
+                    </p>
+                    <button class="linkbox__login linkbox__login--modal">
+                      Login
                     </button>
-                    <button class="linkbox__login" href="#">Login</button>
+                  </form>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </header>
-
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./slick/slick/slick.js"></script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
