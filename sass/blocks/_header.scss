@@ -2,27 +2,83 @@
     position: absolute;
     z-index: 10;
     display: block;
-    padding: 27px 0;
+    padding: 18px 0;
     max-width: 100%;
     width: 100%;
+}
+
+:root {
+    --body-bg-light: #EEEEEE;
+    --body-bg-dark: #1C1C1C;
+
+    --text-light: #000000;
+    --text-dark: #FFFFFF;
+
+    --main-green: #299764;
+
+    --btn-bg-light: #F5F5F5;
+    --btn-bg-dark: #272727;
 }
 
 .site-header__inner {
     display: flex;
     align-items: center;
 }
+
 .nav__list {
     display: flex;
     align-items: center;
 }
 
-.nav__item + .nav__item {
+.nav__item {
     margin-left: 32px;
 }
+
 .nav__link {
-    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--text-light);
 }
 
 .site-header__linkbox {
     margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.linkbox__tel {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--text-light);
+}
+
+.linkbox__mode__btn {
+    padding: 19px;
+    margin: 0 22px;
+    background-color: var(--btn-bg-light);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+.linkbox__login {
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+    color: #FFFFFF;
+    background-color: var(--main-green);
+    border: none;
+    outline: none;
+    border-radius: 100px;
+
+    &::after {
+        display: block;
+        margin-left: 11px;
+        width: 14px;
+        height: 14px;
+        background-image: url('../../images/login-icon.svg');
+        content: '';
+    }
 }
