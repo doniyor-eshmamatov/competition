@@ -10,13 +10,14 @@ html {
 }
 
 body {
-  padding-top: 96px;
+  padding-top: 78px;
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: 'Montserrat','Arial', sans-serif;
   background-color: var(--body-bg-light);
+  color: var(--text-light);
 }
 
 main {

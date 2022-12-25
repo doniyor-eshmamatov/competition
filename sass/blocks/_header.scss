@@ -1,13 +1,16 @@
 .site-header {
-  position: fixed;
-  background-color: var(--body-bg-light);
-  top: 0;
-  z-index: 9;
-  display: block;
-  padding: 18px 0;
-  max-width: 100%;
-  width: 100%;
-  border-bottom: 1.5px solid #e5e7ea;
+    position: fixed;
+    background-color: var(--body-bg-light);
+    top: 0;
+    z-index: 9;
+    display: block;
+    padding: 18px 0;
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 1.5px solid var(--btn-bg-light);
+}
+main {
+    background-color: var(--body-bg-light);
 }
 
 .site-header__inner {

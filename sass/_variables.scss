@@ -1,12 +1,23 @@
 :root {
+    --body-bg-light: #F5F5F5;
     --btn-bg-light: #EEEEEE;
-    --body-bg-dark: #1C1C1C;
 
     --text-light: #000000;
     --text-dark: #FFFFFF;
 
     --main-green: #299764;
 
-    --body-bg-light: #F5F5F5;
     --btn-bg-dark: #272727;
+}
+
+.dark {
+    --btn-bg-light: #1C1C1C;
+
+    --text-light: #FFFFFF;
+    --text-dark: #000000;
+
+    --main-green: #299764;
+
+    --body-bg-light: #272727;
+    --btn-bg-dark: #F5F5F5;
 }

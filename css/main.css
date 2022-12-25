@@ -1,11 +1,19 @@
 :root {
+  --body-bg-light: #F5F5F5;
   --btn-bg-light: #EEEEEE;
-  --body-bg-dark: #1C1C1C;
   --text-light: #000000;
   --text-dark: #FFFFFF;
   --main-green: #299764;
-  --body-bg-light: #F5F5F5;
   --btn-bg-dark: #272727;
+}
+
+.dark {
+  --btn-bg-light: #1C1C1C;
+  --text-light: #FFFFFF;
+  --text-dark: #000000;
+  --main-green: #299764;
+  --body-bg-light: #272727;
+  --btn-bg-dark: #F5F5F5;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -360,13 +368,14 @@ html {
 }
 
 body {
-  padding-top: 96px;
+  padding-top: 78px;
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   background-color: var(--body-bg-light);
+  color: var(--text-light);
 }
 
 main {
@@ -425,7 +434,11 @@ button {
   padding: 18px 0;
   max-width: 100%;
   width: 100%;
-  border-bottom: 1.5px solid #e5e7ea;
+  border-bottom: 1.5px solid var(--btn-bg-light);
+}
+
+main {
+  background-color: var(--body-bg-light);
 }
 
 .site-header__inner {
@@ -702,6 +715,7 @@ button {
 
 .hero {
   position: relative;
+  padding-top: 40px;
 }
 
 .hero__carousel__item {
